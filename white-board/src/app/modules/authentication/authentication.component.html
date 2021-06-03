@@ -1,12 +1,6 @@
-<div class="container w-100 h-100 d-flex d-flex justify-content-center align-items-center">
-  <div class="tabs-container p-4">
-    <mat-tab-group class="tab-content">
-      <mat-tab label="Регистрация">
-        <app-register></app-register>
-      </mat-tab>
-      <mat-tab label="Вход">
-        <app-login></app-login>
-      </mat-tab>
-    </mat-tab-group>
-  </div>
+<div class="containerd-flex d-flex justify-content-center mt-5">
+  <ngx-auth-firebaseui
+    [providers]="[providers.Google]"
+    [guestEnabled]="false">
+</ngx-auth-firebaseui>
 </div>
