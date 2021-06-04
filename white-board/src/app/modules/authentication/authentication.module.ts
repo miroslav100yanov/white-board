@@ -1,3 +1,4 @@
+import { HeaderModule } from './../components/header/header.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatInputModule } from '@angular/material/input';
@@ -27,7 +28,8 @@ import { AngularFireStorageModule } from '@angular/fire/storage'
     AuthenticationRoutingModule,
     MatTabsModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    HeaderModule
   ]
 })
 export class AuthenticationModule { }

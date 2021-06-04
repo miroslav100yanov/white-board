@@ -1,0 +1,13 @@
+.header {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: #ffffff;
+  position: fixed;
+  position: -webkit-fixed; /* Safari */
+  width: 100%;
+  z-index: 1000;
+  top: 0; /* Required for sticky position */
+  height: 4.75rem;
+}
+

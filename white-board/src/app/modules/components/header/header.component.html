@@ -1,0 +1,23 @@
+<div class="header">
+    <div class="container d-flex flex-column">
+      <div class="row">
+        <div class="col">
+          <div class="d-flex align-items-center">
+            <ng-content select="app-header-back-navigator"></ng-content>
+            <div class="justify-content-between w-100">
+              <ng-content select="app-header-title"></ng-content>
+            </div>
+            <ng-content select="app-header-icon"></ng-content>
+            <!-- Header icons -->
+            <div class="flex flex-row ml-4">
+              <div class="d-flex align-items-center h-100">
+                <mat-icon class="tg-clickable mat-hover-effect mat-hover-effect-light">
+                  person
+                </mat-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

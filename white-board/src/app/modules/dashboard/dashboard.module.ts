@@ -3,6 +3,7 @@ import { RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HeaderModule } from '../components/header/header.module';
 
 
 
@@ -11,7 +12,8 @@ import { CommonModule } from '@angular/common';
   imports: [
     CommonModule,
     RouterModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    HeaderModule
   ],
   exports: [DashboardComponent]
 })
