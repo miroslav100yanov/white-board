@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthProvider } from 'ngx-auth-firebaseui';
 
 @Component({
@@ -10,9 +11,13 @@ export class AuthenticationComponent implements OnInit {
 
   providers = AuthProvider;
 
-  constructor() { }
+  constructor(private readonly router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  onLogin() {
+    this.router.navigateByUrl('dashboard')
   }
 
 }
